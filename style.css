@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    color: navy;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.nav-links a {
+    color: navy;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-links .login-btn {
+    background: navy;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('train logo.png') no-repeat center center;
+    background-size: cover; /* Ensures full image visibility */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center table on image */
+    padding: 20px;
+}
+
+/* Dark Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better contrast */
+}
+
+/* Booking Container */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    width: 500px; /* Increased width */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures visibility above overlay */
+}
+
+/* Heading */
+.container h2 {
+    color: navy;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Table Layout */
+table {
+    width: 100%; /* Full width */
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 5px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Checkbox Options */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    margin: 10px 0;
+}
+
+.options label {
+    font-size: 12px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkorange;
+}
+
+/* Customer Information Box */
+.customer-info {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    padding: 10px;
+    border: 2px solid navy;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.customer-info p {
+    margin: 5px 0;
+}
+
+.customer-info a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.customer-info .warning {
+    color: red;
+    font-weight: bold;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: navy;
+    color: white;
+    margin-top: 20px;
+}

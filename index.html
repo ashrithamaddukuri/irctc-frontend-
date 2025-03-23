@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Modern UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <img src="irctc logo.png" alt="IRCTC Logo" class="logo">
+            <div class="nav-links">
+                <a href="#">PNR STATUS</a>
+                <a href="#">CHARTS / VACANCY</a>
+                <a href="#">TRAINS</a>
+                <a href="#">HOTELS</a>
+                <a href="#">FLIGHTS</a>
+		<a href="#" class="Register-btn">REGISTER</a>
+                <a href="#" class="login-btn">LOGIN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Train Background -->
+    <section class="hero">
+        <div class="overlay"></div>
+        
+        <div class="container">
+            <h2>BOOK TRAIN TICKET</h2>
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="From"></td>
+                    <td><input type="text" placeholder="To"></td>
+                </tr>
+                <tr>
+                    <td><input type="date"></td>
+                    <td>
+                        <select>
+                            <option>All Classes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select>
+                            <option>GENERAL</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="options">
+                <label><input type="checkbox"> Person With Disability Concession</label>
+                <label><input type="checkbox"> Flexible With Date</label>
+                <label><input type="checkbox"> Train with Available Berth</label>
+                <label><input type="checkbox"> Railway Pass Concession</label>
+            </div>
+
+            <div class="button-container">
+                <button class="button">Search</button>
+                <button class="button">Easy Booking on AskDISHA</button>
+            </div>
+	   <!-- Customer Information Box -->
+            <div class="customer-info">
+                <p>Customers can use the enhanced interface for their IRCTC-related queries!!</p>
+                <p><a href="https://equery.irctc.co.in" target="_blank">https://equery.irctc.co.in</a></p>
+                <p><strong>Customer Care Numbers:</strong> 14646 / 08044647999 / 08035734999</p>
+                <p class="warning"><strong>BEWARE OF FRAUDSTERS:</strong> Always download the official IRCTC Rail Connect App from the Google Play Store or Apple App Store only.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Have you not found the right one?</h2>
+        <p>Find a service suitable for you here.</p>
+        <div class="service-container">
+            <div class="service-item">
+                <img src="flights logo.png" alt="Flights">
+                <p>FLIGHTS</p>
+            </div>
+            <div class="service-item">
+                <img src="hotel logo" alt="Hotels">
+                <p>HOTELS</p>
+            </div>
+            <div class="service-item">
+                <img src="catering.png" alt="E-Catering">
+                <p>E-CATERING</p>
+            </div>
+            <div class="service-item">
+                <img src="bus" alt="Bus">
+                <p>BUS</p>
+            </div>
+            <div class="service-item">
+                <img src="holiday" alt="Holiday Packages">
+                <p>HOLIDAY PACKAGES</p>
+            </div>
+            <div class="service-item">
+                <img src="train.jpg" alt="Tourist Train">
+                <p>TOURIST TRAIN</p>
+            </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 IRCTC | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
